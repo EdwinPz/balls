@@ -1,90 +1,61 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flavor Fuzion | Spice in Every Bite</title>
-  <meta name="description" content="Flavor Fuzion community recipes, kitchen simulator, and foodie chat." />
-  <meta property="og:title" content="Flavor Fuzion" />
-  <meta property="og:description" content="Spice in Every Bite" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="logo.svg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="favicon.svg" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="topbar">
-    <div class="brand"><img src="logo.svg" alt="Flavor Fuzion logo" /><span>Flavor Fuzion</span></div>
-    <div class="credit-pill">🔥 Credits: <strong id="credit-count">0</strong></div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flavor Fuzion | Spice in Every Bite</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav">
+        <div class="brand-mark">Flavor Fuzion</div>
+        <a class="cta" href="#contact">Order Catering</a>
+      </nav>
 
-  <main>
-    <section class="hero">
-      <h1>Spice in Every Bite</h1>
-      <p>Join the Flavor Fuzion community to unlock blog posts, chat, kitchen simulator, and your own profile gallery.</p>
-    </section>
-
-    <section class="panel" id="auth-panel">
-      <h2>Register / Login</h2>
-      <div class="grid2">
-        <form id="register-form" class="stack">
-          <h3>Create account</h3>
-          <input name="username" placeholder="Username" required minlength="3" />
-          <input name="password" type="password" placeholder="Password" required minlength="6" />
-          <button>Create account</button>
-        </form>
-        <form id="login-form" class="stack">
-          <h3>Sign in</h3>
-          <input name="username" placeholder="Username" required />
-          <input name="password" type="password" placeholder="Password" required />
-          <button>Login</button>
-        </form>
+      <div class="hero-content">
+        <p class="eyebrow">Fresh • Bold • House-made</p>
+        <h1>Flavor Fuzion</h1>
+        <p class="tagline">Spice in Every Bite</p>
+        <p class="subcopy">
+          A modern kitchen experience blending comfort-food favorites with vibrant,
+          spice-forward flavors.
+        </p>
       </div>
-      <p id="auth-state"></p>
-      <button id="logout-btn" class="ghost">Logout</button>
-    </section>
+    </header>
 
-    <section class="panel" id="blog-panel">
-      <h2>Recipe Blog</h2>
-      <div id="posts"></div>
-    </section>
+    <main>
+      <section class="section" id="menu">
+        <h2>Featured Favorites</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Signature Bowls</h3>
+            <p>Fresh grains, roasted veggies, and chef sauces built to your taste.</p>
+          </article>
+          <article class="card">
+            <h3>Street Tacos</h3>
+            <p>Loaded tortillas with bright citrus slaw and smoky house seasoning.</p>
+          </article>
+          <article class="card">
+            <h3>Weekend Brunch</h3>
+            <p>Comfort classics reimagined with global spices and seasonal produce.</p>
+          </article>
+        </div>
+      </section>
 
-    <section class="panel" id="kitchen-panel">
-      <h2>Kitchen Simulator</h2>
-      <div id="kitchen-preview" class="kitchen-preview"></div>
-      <div class="grid4">
-        <label>Wall <input type="color" id="k-wall" /></label>
-        <label>Counter <select id="k-counter"><option>wood</option><option>granite</option><option>marble</option></select></label>
-        <label>Appliance <select id="k-appliance"><option>stainless</option><option>retro-purple</option><option>matte-black</option></select></label>
-        <label>Decor <select id="k-decor"><option>plants</option><option>spice-rack</option><option>neon-sign</option></select></label>
-      </div>
-      <div class="row"><button id="save-kitchen">Save Kitchen</button><button id="reset-kitchen" class="ghost">Reset</button></div>
-    </section>
+      <section class="section accent" id="about">
+        <h2>Our Kitchen, Your Table</h2>
+        <p>
+          From prep to plating, everything is crafted in small batches with
+          quality ingredients and big flavor personality.
+        </p>
+      </section>
 
-    <section class="panel" id="chat-panel">
-      <h2>Public Chat Room</h2>
-      <div id="chat-box" class="chat"></div>
-      <form id="chat-form" class="row"><input id="chat-input" required placeholder="Drop a message" /><button>Send</button></form>
-    </section>
-
-    <section class="panel" id="profile-panel">
-      <h2>Profile + Image Sharing</h2>
-      <textarea id="bio" placeholder="Your bio"></textarea>
-      <div class="row"><button id="save-bio">Save Bio</button></div>
-      <input id="image-upload" type="file" accept="image/*" />
-      <div id="gallery" class="gallery"></div>
-    </section>
-
-    <section class="panel">
-      <h2>Newsletter</h2>
-      <form id="newsletter-form" class="row">
-        <input id="newsletter-email" type="email" required placeholder="you@example.com" />
-        <button>Subscribe</button>
-      </form>
-    </section>
-  </main>
-
-  <script src="app.js"></script>
-</body>
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p>Email: hello@flavorfuzion.com</p>
+        <p>Phone: (555) 123-4567</p>
+      </section>
+    </main>
+  </body>
 </html>
