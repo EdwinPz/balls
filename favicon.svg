@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 130">
-<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#ff9a00"/><stop offset="1" stop-color="#ff2d3b"/></linearGradient></defs>
-<rect width="420" height="130" rx="24" fill="#120706"/>
-<text x="22" y="78" font-size="58" font-family="Verdana" font-weight="700" fill="url(#g)">Flavor Fuzion</text>
-<text x="28" y="108" font-size="22" font-family="Verdana" fill="#ffd9ad">SPICE IN EVERY BITE</text>
-</svg>
